@@ -6,9 +6,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.carousel {
+  perspective: 1200px;
+  background: #100000;
+  padding-top: 10%;
+  font-size: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+.spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+.spinner img {
+  width: 40%;
+  max-width: 425px;
+  position: absolute;
+  left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+}
+.spinner img:nth-child(1) {
+  transform: rotateY(0deg);
+}
+.spinner img:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+.spinner img:nth-child(3) {
+  transform: rotateY(-90deg);
+}
+.spinner img:nth-child(4) {
+  transform: rotateY(-135deg);
+}
+.spinner img:nth-child(5) {
+  transform: rotateY(-180deg);
+}
+.spinner img:nth-child(6) {
+  transform: rotateY(-225deg);
+}
+.spinner img:nth-child(7) {
+  transform: rotateY(-270deg);
+}
+.spinner img:nth-child(8) {
+  transform: rotateY(-315deg);
+}
+
+.ss-icon {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top: 40%;
+}
+
+.ss-icon:hover {
+  background: red;
+  color: black;
+  cursor: pointer;
+}
+
+.ss-icon-right {
+  position: absolute;
+  color: white;
+  right: 5%;
+  font-size: 50px;
+  top: 40%;
+}
+
+.ss-icon-right:hover {
+  background: red;
+  color: black;
+  cursor: pointer;
+}
+
+.App {
+  position: relative;
 }
